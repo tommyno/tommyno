@@ -1,0 +1,160 @@
+/* RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* STYLES */
+
+:root {
+  --color-dark: #161616;
+  --color-red: #ff4929;
+  --color-green: #4cdb95;
+}
+
+body {
+  color: white;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+a {
+  border-bottom: 1px solid var(--color-red);
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-red);
+}
+
+h1,
+.h1 {
+  font-size: 46px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+  margin-top: 32px;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+h3,
+.h3 {
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.about {
+  background: var(--color-green);
+  color: var(--color-dark);
+  padding: 4vw;
+  flex: 1 1 50%;
+}
+
+.contact {
+  background: var(--color-dark);
+  color: white;
+  padding: 2vw;
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact__title {
+  color: var(--color-green);
+  font-size: 48px;
+  margin: 0 0 24px 0;
+}
+
+.round-image {
+  display: inline-block;
+  border-radius: 50%;
+  object-fit: contain;
+  max-width: 200px;
+  margin-bottom: 32px;
+}
+
+dl {
+  margin-bottom: 24px;
+}
+
+dd {
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .about,
+  .contact {
+    padding: 4vw 4vw 8vw;
+  }
+}
