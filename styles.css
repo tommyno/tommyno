@@ -155,6 +155,17 @@ dd {
 
   .about,
   .contact {
-    padding: 4vw 4vw 8vw;
+    padding: 6vw 4vw 10vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .about {
+    padding-bottom: 40px;
+  }
+
+  .contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
