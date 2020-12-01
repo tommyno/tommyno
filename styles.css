@@ -231,3 +231,12 @@ dd {
 [data-animation-order="8"] {
   animation-delay: 0.45s;
 }
+[data-animation-order="9"] {
+  animation-delay: 0.5s;
+}
+[data-animation-order="10"] {
+  animation-delay: 0.55s;
+}
+[data-animation-order="11"] {
+  animation-delay: 0.6s;
+}
